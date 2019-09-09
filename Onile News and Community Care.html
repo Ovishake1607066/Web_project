@@ -1,0 +1,189 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Onile News and Community Care.aspx.cs" Inherits="_1607066_project_.Onile_News_and_Community_Care" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <title>Online News and Community Care</title>
+  <style>
+    ol {
+  background: violet;
+  padding: 5px;
+  list-style-type: upper-roman;
+}
+li {
+  background: #4CAF50;
+  padding: 4px;
+  margin: 9px;
+  color:yellow;
+}
+ ul{
+  font-size:2 em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:green;
+}
+a:link, a:visited {
+  background-color:lightgreen;
+  color: black;
+  padding: 2px 3px;
+  text-align: center; 
+  text-decoration: none;
+}
+a:hover, a:active {
+  background-color: blue;
+  text-decoration: underline;
+}
+.center {
+  font-style: italic;
+  font-size: 2.5em;
+  color: red;
+}
+div > p{
+  text-align: center;
+  color: rgb(240,25,75);
+} 
+body {
+  background-color: lightblue;
+}
+ table {
+  border-collapse: collapse;
+  width: 50%;
+  border: 2px solid black;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+tr:nth-child(even){background-color: lightgreen}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+input[type=text] {
+  width: 75%;
+  box-sizing: border-box;
+  border: 4px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px 10px 10px; 
+  padding: 17px 20px 20px 17px;
+  margin:auto;
+}
+form {
+    display: inline;
+	text-align: right;
+	margin=20px;
+}
+img {
+  border-radius: 50%;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+      #Button1 {
+          margin-bottom: 19px;
+      }
+  </style>
+</head>
+<body style="background-image: url(images.jpg); width:100%; height:100%;">
+    <form id="form1" runat="server">
+    <div>
+        <h1 id="top" class="center"><b>Online News and Community Care</b></h1>
+        <br />
+
+        <p id="demo" background-color=black></p>
+
+
+        <div style="margin-left: auto; margin-right: auto; text-align: center;">
+    <asp:Label ID="Label1" runat="server" Text="ABC" Font-Bold="true" Font-Size="X-Large"
+        CssClass="StrongText"></asp:Label>
+</div>
+        <p id="P1"></p>
+
+<script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toString();
+</script>
+        <br />
+    <br>
+<p><span style="text-align:center;">
+<i  class="fas fa-globe-europe" style="font-size:70px; color:orange;float:left;"></i> </span>
+<span>
+<form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input  type="text" name="search" placeholder="Search..">
+</form></span>
+<span>
+<i class="fas fa-globe-europe" style="font-size:70px;color:orange; float:right"></i> </span>
+</p>
+<h1>
+<ul>
+  <li style="  float: left;
+  border:1px solid #bbb;"><asp:Button ID="Button4" runat="server" Text="Home" OnClick="Button4_Click" BackColor="#33CC33" Height="36px" style="font-weight: 700; font-size: large" Width="132px" /></li>
+<li style="  float: left;
+  border:1px solid #bbb;"><asp:Button ID="Button3" runat="server" Text="News" OnClick="Button3_Click" BackColor="#33CC33" Height="36px" style="font-weight: 700; font-size: large" Width="132px" /></li>
+<li style="  float: left;
+  border:1px solid #bbb;"><asp:Button ID="Button2" runat="server" Text="Upload Files" OnClick="Button2_Click" BackColor="#33CC33" Height="38px" style="font-weight: 700; font-size: large" Width="140px"  /></li>
+      <li style="  float: left;
+  border:1px solid #bbb; height: 38px; width: 132px;"><asp:Button ID="Button1" runat="server" Text="Upload Image" OnClick="Button1_Click" BackColor="#33CC33" Height="41px" style="font-weight: 700; font-size: large" Width="134px" /></li>
+  <li style="float:right"><li style="  float: left;
+  border:1px solid #bbb;"><asp:Button ID="Button5" runat="server" Text="About" OnClick="Button5_Click" BackColor="#33CC33" Height="36px" style="font-weight: 700; font-size: large" Width="132px" /></li>
+</ul>
+</h1>
+
+<ul style="  background: rgb(120,100,200);
+  padding: 4px;
+  list-style-type: square;">
+<li><b>International News</b></li>
+<li><b>Bangla News Sites</b></li>
+<li><b>Bangladeshi English Newspapers</b></li>
+<li><b>International Newspapers</b></li>
+<li><b>Educational Sites</b></li>
+<li><b>Bangladeshi Newspapers</b><ol>
+<li><a href="https://www.prothomalo.com/" target="_blank">The Daily Prothom Alo</a></li>
+<li><a href="http://www.bd-pratidin.com/" target="_blank">The Daily Bangladesh Pratidin</a></li>
+<li><a href="http://www.kalerkantho.com/index.php" target="_blank">The Daily Kaler Kantho</a></li>
+<li><a href="http://www.mzamin.com/" target="_blank">The Daily Manabzabin</a></li>
+<li><a href="https://www.amadershomoy.com/bn/" target="_blank">The Daily Amader Shomoy</a></li>
+<li><a href="https://www.thedailystar.net/" target="_blank">The Daily Star</a></li>
+<li><a href="http://www.theindependentbd.com/" target="_blank">The Daily Independent</a></li>
+<li><a href="http://thebangladeshtoday.com/" target="_blank">The Daily Bangladesh Today</a></li>
+</ol></li>
+</ul>
+<br>
+    
+    </div>
+    </form>
+</body>
+</html>

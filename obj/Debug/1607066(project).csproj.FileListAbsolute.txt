@@ -1,0 +1,10 @@
+c:\users\ovishake sen\documents\visual studio 2012\Projects\1607066(project)\1607066(project)\bin\1607066(project).dll
+c:\users\ovishake sen\documents\visual studio 2012\Projects\1607066(project)\1607066(project)\bin\1607066(project).pdb
+c:\users\ovishake sen\documents\visual studio 2012\Projects\1607066(project)\1607066(project)\obj\Debug\1607066(project).dll
+c:\users\ovishake sen\documents\visual studio 2012\Projects\1607066(project)\1607066(project)\obj\Debug\1607066(project).pdb
+C:\Users\Ovishake Sen\Documents\Visual Studio 2012\Projects\1607066(project)\1607066(project)\obj\Debug\1607066(project).csprojResolveAssemblyReference.cache
+C:\Users\Ovishake Sen\Documents\Visual Studio 2012\Projects\1607066(project of login)\1607066(project)\bin\1607066(project).dll
+C:\Users\Ovishake Sen\Documents\Visual Studio 2012\Projects\1607066(project of login)\1607066(project)\bin\1607066(project).pdb
+C:\Users\Ovishake Sen\Documents\Visual Studio 2012\Projects\1607066(project of login)\1607066(project)\obj\Debug\1607066(project).dll
+C:\Users\Ovishake Sen\Documents\Visual Studio 2012\Projects\1607066(project of login)\1607066(project)\obj\Debug\1607066(project).pdb
+C:\Users\Ovishake Sen\Documents\Visual Studio 2012\Projects\1607066(project of login)\1607066(project)\obj\Debug\1607066(project).csprojResolveAssemblyReference.cache
